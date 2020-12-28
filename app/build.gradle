@@ -41,6 +41,10 @@ dependencies {
 
     def room_version = "2.2.5"
 
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0-rc01"
+    kapt "androidx.lifecycle:lifecycle-compiler:2.0.0-rc01"
+
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
 
@@ -49,4 +53,12 @@ dependencies {
 
     // optional - Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
+
+    implementation "androidx.vectordrawable:vectordrawable:1.0.0"
+
+    // rv groupie
+    implementation 'com.xwray:groupie:2.3.0'
+    implementation 'com.xwray:groupie-kotlin-android-extensions:2.3.0'
+
     }
+
